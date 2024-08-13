@@ -1,0 +1,50 @@
+Written by Russ Freeman Copyright ©2000
+Email: russf@gipsysoft.com
+Web site: http://www.gipsysoft.com/
+Last updated: May 14th, 2000
+----------------------------
+
+List of features I would like to have done but just can't find the energy to go ahead
+with them. Still, getting to version 1.8 is pretty good I guess.
+
+
+Follow Focus.
+-------------
+Similar thing to Follow Cursor, except we would follow the focus instead, I guess
+we would simply call GetFocus and zoom on the centre of that window. I guess even the
+the fact that we zoom on the centre of the window would be configurable, would it
+be the centre or the top left of each window, or would we try to zoom out to include
+the entire window? all configurable I guess.
+
+
+Timed capture
+-------------
+Start and stop capturing the image to file.
+
+
+Bitmap Menus
+------------
+Change the context menu to be an office like bitmap menu. Also add the pager control to the toolbar.
+
+
+Close/Minmise to the tray.
+--------------------
+Close and minimise just closes Zoom+ to the system tray. 
+
+
+AppBar Zoom+
+------------
+Attaches itself to the desktop or becomes part of the toolbars we have on the desktop.
+
+
+Tooltips in status bar
+----------------------
+Simple tool tip describing the content of each panel in the status bar.
+
+
+Misc.
+=====
+Context help in all dialogs
+Option to choose whether to zoom to, copy original etc, when release right mouse button.
+
+

@@ -1,0 +1,23 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by ZoomPlus.rc
+//
+#define HIDCANCEL                       0x808e0002    // IDD_OPTIONS
+#define HIDC_COLOUR                     0x808e03fc    // IDD_OPTIONS
+#define HIDC_DISPLAY_MOUSE              0x808e03f3    // IDD_OPTIONS
+#define HIDC_GRID_SIZE                  0x808e03fa    // IDD_OPTIONS
+#define HIDC_GRID_SIZE_SPIN             0x808e03fb    // IDD_OPTIONS
+#define HIDC_HEXADECIMAL                0x808e03ec    // IDD_OPTIONS
+#define HIDC_HOTKEY_BITMAP              0x808e0400    // IDD_OPTIONS
+#define HIDC_HOTKEY_COLOUR              0x808e0401    // IDD_OPTIONS
+#define HIDC_INSTANCE                   0x808e03f5    // IDD_OPTIONS
+#define HIDC_OSCURSOR                   0x808e03ff    // IDD_OPTIONS
+#define HIDC_RELATIVE                   0x808e03fd    // IDD_OPTIONS
+#define HIDC_RGB                        0x808e03eb    // IDD_OPTIONS
+#define HIDC_TRANSPARENT                0x808e03fe    // IDD_OPTIONS
+#define HIDC_UPDATE_FAST                0x808e03f1    // IDD_OPTIONS
+#define HIDC_UPDATE_FAST_SPIN           0x808e03f2    // IDD_OPTIONS
+#define HIDC_UPDATE_MEDIUM              0x808e03ef    // IDD_OPTIONS
+#define HIDC_UPDATE_MEDIUM_SPIN         0x808e03f0    // IDD_OPTIONS
+#define HIDC_UPDATE_SLOW                0x808e03ed    // IDD_OPTIONS
+#define HIDC_UPDATE_SLOW_SPIN           0x808e03ee    // IDD_OPTIONS
+#define HIDOK                           0x808e0001    // IDD_OPTIONS

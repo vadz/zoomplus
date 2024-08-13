@@ -1,0 +1,25 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+ERRORLOG=ZoomPlus.LOG
+LCID=0x809 0x0 0x0 ; English (United Kingdom)
+REPORT=Yes
+CONTENTS=HID_MAIN_HELP
+TITLE=Zoom Plus
+BMROOT=..
+BMROOT=.
+ROOT=..
+ROOT=.
+HLP=ZoomPlus.HLP
+
+[FILES]
+ZoomPlus.rtf
+
+[MAP]
+#include ..\resource.hm
+#include <..\ZoomPlus.hm>
+HID_KEYBOARD=12000
+
+[WINDOWS]
+NormWin="ZoomPlus",(653,102,360,600),25348,(r14876671),(r12632256),f3; Screen Magnification Utility

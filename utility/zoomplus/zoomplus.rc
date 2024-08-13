@@ -1,0 +1,509 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+#include "dlgs.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\r\n"
+    "#include ""dlgs.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTER             CURSOR  DISCARDABLE     "arrow.cur"
+IDC_ARROW_ZOOMPLUS      CURSOR  DISCARDABLE     "res\\Arrow.cur"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ZOOMCURSOR          CURSOR  DISCARDABLE     "Res\\zoomcurs.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 257, 111
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ZOOMPLUS,IDC_MYICON,7,7,20,20
+    LTEXT           "Zoom+ Version 1.8",IDC_VERSION_STATIC,36,10,122,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright Russ Freeman © 2000",IDC_STATIC,36,21,119,8
+    DEFPUSHBUTTON   "OK",IDOK,200,7,50,14,WS_GROUP
+    LTEXT           "r@fatbird.com",IDC_MAIL_ME_STATIC,56,32,80,8,SS_NOTIFY
+    LTEXT           "Thanks to Dan Petitt for going over Zoom+ and giving it the polish it needs and to Mark Jackson for checking out the Help files and everyone else for giving me ideas and testing it.",
+                    IDC_STATIC,36,61,156,43
+    LTEXT           "http://www.gipsysoft.com",IDC_VISIT_ME_STATIC,105,42,86,
+                    8,SS_NOTIFY
+    LTEXT           "Email:",IDC_STATIC,35,32,20,8
+    LTEXT           "or visit my web site at:",IDC_STATIC,35,42,70,8
+END
+
+IDD_SAVE_BITMAP_TEMPLATE DIALOG DISCARDABLE  0, 0, 186, 16
+STYLE DS_3DLOOK | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Save Zoomed Image",IDC_SCREEN_IMAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,56,0,82,10
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 299, 198
+STYLE DS_MODALFRAME | DS_CENTER | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Colour value display",IDC_STATIC,7,7,91,44
+    CONTROL         "&RGB",IDC_RGB,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,15,21,31,10,0,HIDC_RGB
+    CONTROL         "He&xadecimal",IDC_HEXADECIMAL,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,15,34,57,10,0,
+                    HIDC_HEXADECIMAL
+    GROUPBOX        "Updates per second",IDC_STATIC,7,58,91,72
+    LTEXT           "&Slow:",IDC_STATIC,16,73,18,8
+    EDITTEXT        IDC_UPDATE_SLOW,45,70,42,14,ES_AUTOHSCROLL,0,
+                    HIDC_UPDATE_SLOW
+    CONTROL         "Spin1",IDC_UPDATE_SLOW_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,82,70,9,14,0,HIDC_UPDATE_SLOW_SPIN
+    LTEXT           "&Medium:",IDC_STATIC,16,90,28,8
+    EDITTEXT        IDC_UPDATE_MEDIUM,45,88,42,14,ES_AUTOHSCROLL,0,
+                    HIDC_UPDATE_MEDIUM
+    CONTROL         "Spin1",IDC_UPDATE_MEDIUM_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,83,88,9,14,0,HIDC_UPDATE_MEDIUM_SPIN
+    LTEXT           "&Fast:",IDC_STATIC,16,109,16,8
+    EDITTEXT        IDC_UPDATE_FAST,45,106,42,14,ES_AUTOHSCROLL,0,
+                    HIDC_UPDATE_FAST
+    CONTROL         "Spin1",IDC_UPDATE_FAST_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_HOTTRACK,83,104,9,14,0,
+                    HIDC_UPDATE_FAST_SPIN
+    GROUPBOX        "Grid",IDC_STATIC,105,7,132,45
+    LTEXT           "Si&ze:",IDC_STATIC,113,26,16,8
+    EDITTEXT        IDC_GRID_SIZE,135,23,42,14,ES_AUTOHSCROLL,0,
+                    HIDC_GRID_SIZE
+    CONTROL         "Spin1",IDC_GRID_SIZE_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_HOTTRACK,175,21,9,14,0,
+                    HIDC_GRID_SIZE_SPIN
+    PUSHBUTTON      "Co&lour...",IDC_COLOUR,189,22,42,14,0,0,HIDC_COLOUR
+    CONTROL         "Show coordinates relative to the window beneath the cursor",
+                    IDC_RELATIVE,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,106,57,132,18,0,HIDC_RELATIVE
+    CONTROL         "Show mouse &cursor when folllowing",IDC_DISPLAY_MOUSE,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,106,
+                    77,128,10,0,HIDC_DISPLAY_MOUSE
+    CONTROL         "&Allow only one instance of Zoom+",IDC_INSTANCE,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,106,92,122,
+                    10,0,HIDC_INSTANCE
+    CONTROL         "Use &transparency",IDC_TRANSPARENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,106,107,71,10,0,
+                    HIDC_TRANSPARENT
+    CONTROL         "Use OS mouse cursor",IDC_OSCURSOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,106,120,85,10,0,
+                    HIDC_OSCURSOR
+    GROUPBOX        "Static",IDC_STATIC,7,139,182,52
+    LTEXT           "Copy colour to clipboard:",IDC_STATIC,18,153,79,8
+    CONTROL         "HotKey2",IDC_HOTKEY_COLOUR,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,102,150,80,14,0,HIDC_HOTKEY_COLOUR
+    LTEXT           "Copy bitmap to clipboard:",IDC_STATIC,17,173,80,8
+    CONTROL         "HotKey1",IDC_HOTKEY_BITMAP,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,102,169,80,14,0,HIDC_HOTKEY_BITMAP
+    DEFPUSHBUTTON   "OK",IDOK,242,11,50,14,0,0,HIDOK
+    PUSHBUTTON      "Cancel",IDCANCEL,242,29,50,14,0,0,HIDCANCEL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        VERTGUIDE, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ZOOMPLUS            ICON    DISCARDABLE     "Res\\ZoomPlus.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+ID_ACCEL ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            ID_ABOUT,               VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_COPY_TO_CLIPBOARD,   VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_COPY_TO_CLIPBOARD_SCREEN, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "G",            ID_GRID,                VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_HIGHLIGHT,           VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_FOLLOW_MOUSE,        VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_OPTIONS,             VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_SAVE_AS,             VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_ALWAYSONTOP,         VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_TOGGLE_TRANSPARENT,  VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_ADD,         ID_ZOOMIN,              VIRTKEY, NOINVERT
+    VK_ADD,         ID_UPDATE_PLUS,         VIRTKEY, CONTROL, NOINVERT
+    VK_F10,         ID_CONTEXT_MENU,        VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          IDM_EXIT,               VIRTKEY, ALT, NOINVERT
+    VK_SUBTRACT,    ID_ZOOMOUT,             VIRTKEY, NOINVERT
+    VK_SUBTRACT,    ID_UPDATE_MINUS,        VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAIN_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_ALWAYSONTOP
+    BUTTON      ID_SAVE_AS
+    BUTTON      ID_COPY_TO_CLIPBOARD
+    BUTTON      ID_COPY_TO_CLIPBOARD_SCREEN
+    BUTTON      ID_ABOUT
+    BUTTON      ID_FOLLOW_MOUSE
+    BUTTON      ID_GRID
+    BUTTON      ID_OPTIONS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAIN_TOOLBAR        BITMAP  DISCARDABLE     "res\\MainToolbar.bmp"
+IDB_HORIZONTAL_BITMAP   BITMAP  DISCARDABLE     "res\\MarqueeHorizontal.bmp"
+IDB_VERTICAL_BITMAP     BITMAP  DISCARDABLE     "res\\MarqueeVertical.bmp"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,8,0,0
+ PRODUCTVERSION 1,8,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080904b0"
+        BEGIN
+            VALUE "Comments", "Email comments and suggestions r@fatbird.com\0"
+            VALUE "CompanyName", "GipsySoft\0"
+            VALUE "FileDescription", "Screen Magnification Utility\0"
+            VALUE "FileVersion", "1, 8, 0, 0\0"
+            VALUE "InternalName", "ZoomPlus\0"
+            VALUE "LegalCopyright", "Copyright © 1999-2005 Russ Freeman\0"
+            VALUE "LegalTrademarks", "none.\0"
+            VALUE "OriginalFilename", "ZoomPlus.exe\0"
+            VALUE "PrivateBuild", "20\0"
+            VALUE "ProductName", "ZoomPlus - Screen Magnification Utility\0"
+            VALUE "ProductVersion", "1, 8, 0, 0\0"
+            VALUE "SpecialBuild", "20\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x809, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTEXT_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "0"
+    BEGIN
+        MENUITEM "&Always on Top\tCtrl+T",      ID_ALWAYSONTOP
+        MENUITEM "&Follow Mouse\tCtrl+M",       ID_FOLLOW_MOUSE
+        MENUITEM "Transparent\tCtrl+Shift+T",   ID_TOGGLE_TRANSPARENT
+        MENUITEM SEPARATOR
+        MENUITEM "H&ighlight\tCtrl+H",          ID_HIGHLIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "&2x Zoom",                    ID_2X
+        MENUITEM "&4x Zoom",                    ID_4X
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_TOGGLE_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_TOGGLE_STATUSBAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...\tCtrl+O",         ID_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&What's This?",               ID_WHATS_THIS
+    END
+    POPUP "1"
+    BEGIN
+        MENUITEM "Copy &Original Size",         ID_COPYSCREENSELECTION
+        MENUITEM "Copy &Zoomed Size",           ID_COPYSCREENSELECTION_ZOOMED
+
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom &To",                    ID_ZOOM_TO
+        MENUITEM SEPARATOR
+        MENUITEM "&Save to File...",            ID_SAVESELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Cancel",                     ID_CANCEL
+    END
+    POPUP "3"
+    BEGIN
+        MENUITEM "&RGB",                        ID_OPTION_RGB
+        MENUITEM "&Hexadecimal",                ID_OPTION_HEX
+        MENUITEM SEPARATOR
+        MENUITEM "&Status Bar",                 ID_TOGGLE_STATUSBAR
+        MENUITEM SEPARATOR
+        MENUITEM "&What's This?",               ID_WHATS_THIS
+    END
+    POPUP "4"
+    BEGIN
+        MENUITEM "&Screen",                     ID_OPTION_SCREEN_COORDINATES
+        MENUITEM "&Window client",              ID_OPTION_WINDOW_COORDINATES
+        MENUITEM SEPARATOR
+        MENUITEM "&Status Bar",                 ID_TOGGLE_STATUSBAR
+        MENUITEM SEPARATOR
+        MENUITEM "&What's This?",               ID_WHATS_THIS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ALWAYSONTOP          "Toggle always on top state (Ctrl+T)\nChanges the position of Zoom+ in the z-order to be a topmost window."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COPY_TO_CLIPBOARD    "Copy zoomed image to clipboard (Ctrl+C)"
+    ID_COPY_TO_CLIPBOARD_SCREEN 
+                            "Copy screen image to clipboard (Ctrl+Shift+C)"
+    ID_SAVE_AS              "Save Image As (Ctrl+S)"
+    ID_ABOUT                "Display the about dialog."
+    ID_SIZE_BITMAP          "Determine the size of a portion of the bitmap (Ctrl-M)"
+    IDS_MAIL_ME_URL         "mailto:r@fatbird.com?subject=I love Zoom+ because..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REBAR_TEXT          "Zoom+"
+    IDS_SAVE_AS_FILE_MASK   "Bitmap Files (*.bmp)|*.bmp||"
+    IDS_AUTO_UPDATE_FORMAT  "Auto Update - %s"
+    IDS_APP_TITLE           "Zoom+"
+    IDS_FAILED_TO_WRITE_DIB "Failed to write the image to the file specified."
+    IDS_FAILED_TO_ACQUIRE_DIB "Failed to properly capture the screen image."
+    IDS_ZOOM_LEVEL_FORMAT   "Zoom Level x%d"
+    ID_FOLLOW_MOUSE         "Follow the mouse (Ctrl-M)\nCause the point of interest to follow the mouse."
+    ID_2X                   "\nSet the zoom factor to 2 times"
+    ID_4X                   "\nSet the zoom factor to 4 times"
+    ID_WHATS_THIS           "\nDisplay context sensitive help"
+    ID_HELP                 "\nDisplay the main help topic"
+    ID_TOGGLE_TOOLBAR       "\nToggle the toolbar on and off"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VISIT_ME_URL        "http://www.gipsysoft.com?Zoom+"
+    IDS_DEFAULT_STATUSBAR_TEXT "Press F1 for help"
+    IDS_WIDEST_RGB          "Colour (rgb): 000,000,000 "
+    IDS_RGB_FORMAT          "Colour (rgb): %03d,%03d,%03d "
+    IDS_WIDEST_COORDS       " 99999,99999 "
+    IDS_COORDS_FORMAT       " %d, %d "
+    IDS_OPTIONS_UPDATE_FAILED 
+                            "Invalid update specified.\nA valid update should be between 1 and 50."
+    IDS_HEX_FORMAT          "Colour: #%02x%02x%02x"
+    IDS_SELECT_RECTANGLE_DIMENSIONS "Selected size %dx%d"
+    IDS_ABOUT_ZOOM_PLUS     "&About Zoom+"
+    IDS_SOMETHING_WENT_WRONG 
+                            "Something went wrong whilst trying to display the registration dialog box - this is a fatal error.\nPlease reinstall your copy of Zoom+."
+    IDS_BAD_REG_NUMBER      "Invalid registration number."
+    IDS_REGISTERED          " (Registered)"
+    IDS_OPTIONS_GRIDSIZE_FAILED 
+                            "Invalid grid size specified.\nA valid grid size should be between 1 and 128."
+    IDS_OPTIONS             "&Options...\tCtrl+O"
+    IDS_GIPSYSOFT           "www.gipsysoft.com"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOGGLE_STATUSBAR     "\nToggle the status bar on and off"
+    ID_OPTIONS              "Displays the options dialog (Ctrl+O).\nDisplay the options dialog."
+    ID_COPYSCREENSELECTION  "\nCopy the current screen selection to the clipboard"
+    ID_SAVESELECTION        "\nSave the current selection to file"
+    ID_COPYSCREENSELECTION_ZOOMED 
+                            "\nCopy the current zoomed selection to the clipboard"
+    ID_CANCEL               "\nCancel the current selection"
+    ID_ZOOM_TO              "\nZoom to the selection"
+    ID_0_HIGHLIGHT          "\nHighlight the magnified area on screen"
+    ID_HIGHLIGHT            "\nHighlight the zoom screen rectangle."
+    ID_GRID                 "Toggle the grid (Ctrl+G)\nSwitch the grid on or off"
+    ID_OPTION_RGB           "Display the colour text as RGB"
+    ID_OPTION_HEX           "Display the colour text as hexadecimal"
+    ID_OPTION_SCREEN_COORDINATES 
+                            "Switch the the coordinates to be screen coordinates."
+    ID_OPTION_WINDOW_COORDINATES 
+                            "Switch the coorindates display to relative to the window client area"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOGGLE_TRANSPARENT   "Toggle transparency(Ctrl+Shift+T)\nToggle Zoom+ as semi-transparent"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STATUSBAR_TIP_URL   "A link to GipsySoft.com. Click it to see more cool developer tools."
+    IDS_STATUSBAR_TIP_COLOR_RGB 
+                            "Shows the color under the mouse cursor. Right click to toggle between hexadecimal and RGB format."
+    IDS_STATUSBAR_TIP_COORDINATES 
+                            "The current mouse coordinates. Right click to switch between screen coordinates and window coordinates."
+    IDS_STATUSBAR_TIP_COLOR "The color under the mouse cursor."
+    IDS_DRAG_ZOOM_INSTRUCTIONS 
+                            "Move the mouse to zoom in on any section of your screen"
+    IDS_DRAG_SELECTION_TIP  "Drag the highlight to select the area of screen you wish to highlight"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

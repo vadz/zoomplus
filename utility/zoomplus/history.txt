@@ -1,0 +1,103 @@
+Written by Russ Freeman Copyright ©2002
+Email: russf@gipsysoft.com
+Web site: http://www.gipsysoft.com/
+Last updated: June 19, 2002
+
+Zoom+ Change History
+--------------------
+List of changes and remarks for the various versions of Zoom+
+
+1.8
+Added system hotkeys (configurable in the options) to copy the colour OR the bitmap to the clipboard.
+
+1.7
+In follow mouse mode when the cursor is showing it will now optionlly display the operating system cursor. Change it in the options dialog.
+  I also updated the help for this...once I remembered how ;-)
+
+1.6
+Added a toolbar button to show the options. I wish I could draw icons though ;-)
+Added ability to correct the window position when changing screen sizes. This was annoying because I was testing other software
+  when dealing with the absence of a second monitor and Z+ of course remember it's screen position
+Change the source code to explicitly use the WinHelper namespace so parts of the code can be more easily used in MFC applications
+Added a tip for when the user mouse downs on the Zoom+ display - helps novice users that don't know what to do.
+Changed the default window to be a bit bigger
+Changed project settings so paths for LIB and include are not needed.
+
+1.5c
+Added statusbar text when left clicking to encourage user to move the mouse.
+Added a hyperlink to status bar.
+Added tooltips to the statusbar panels to encourage use of them.
+When displaying a hyperlink I now use the system 'hand' cursor if it can be loaded, if not then I use my own hand cursor.
+
+1.5b
+Small performance enhancement by moving the LoadCursor out of the draw loop when in follow
+	mouse mode.
+
+1.5a
+Added a transparency option. This only works on Windows 200 but when it works it works
+	just great. With transparency switched on there is a really cool side-effect that allows
+	you to watch the windows beneath Zoom+. Is that great!
+	There is a menu option, a shortcut key to toggle it and you can use the mouse wheel+SHIFT
+		to alter the transparency.
+
+1.5
+Fixed issues with multim-monitor support so Z+ now works just great with multiple
+	monitors
+Fixed a couple of minor bugs including the bug where the hex colour value was shown
+	incorrectly.
+Added icon to the selection tip to make it look nicer.
+Added a different cursor when left-dragging.
+Bumped up the font size in the help file and fixed some typos.
+Removed the shareware crap. Shareware doesn't work and I have decided that Z+ should be free
+	anyway. And I have also decided to ship the source code with it too - if you want it that
+	is.
+
+1.4
+Fixed problem working on NT5(Windows 2000) in that the toolbar was not displaying flat.
+Added an overlay grid, with use defined size and colour, this should basically
+	finish the pixel counting.
+Added the ability to toggle the coordintes in the status bar between screen and window client
+	coordinates. This makes it easier to see where the mouse is within a window.
+Added extra context menus to the colour and coordinate panels in the status bar, this means you 
+	no longer have to go to the options dialog box to change the panel settings.
+Numerous changes to the help.
+Removed About and Help from the main context menu because it was too big.
+Added a shortcut for the highlight feature (CTRL+H)
+
+1.3
+Fixed a minor memory leak and added status bar help text to the Highlight command.
+Fixed a minor pixel out on the options dialog.
+Added Intellimouse style panning window. This allows the user to middle button down and
+	to move the mouse away from the origin window. Code in OWnd.DLL is dynamically loaded
+	so if the DLL goes missing the core functionality remains intact.
+Fixed slight weirdness when using the Zoom To Selection feature where it was only using
+  the width to determine the new zoom level.
+Changed the selection rectangle to be a marquee, this makes it easier to see than the
+  inverted rectangle.
+
+1.2
+Added a status bar. This contains the usual "F1 for Help", plus it contains a colour
+  panel showing the actual colour at the mouse point, the RGB value at the mouse
+  point and the current cursor coordinates.
+Added an Options dialog. Options include the ability to define Slow, Medium and Fast
+  update speeds. Ability to switch off the mouse cursor display when Follow Mouse
+  is on, and the ability to ensure only one instance of Zoom+ is running.
+Added Right Drag feature. This makes the program really useful -- gives Zoom+ the ability
+  to mark a rectangle on the zoom display. When right drag is complete (and right
+  button released) a context menu appears giving the choice of saving the selection
+  to file or copying the selection to the clipboard.
+Added "Zoom To" to zoom to the selected area of Zoom+, an extension of the right drag
+  feature.
+Added Highlight feature to flash where the zoom rectangle is on the screen should you
+  have happened to lose it.
+Added nag screen as per WinZip. Not too offensive I think but hopefully enough to remind
+  of Zoom+ being Shareware.
+
+1.1
+Fixed stoopid fatal flaw.
+
+
+1.0	(Some sites issued it as 1.1 for some reason.)
+Release with one major flaw, I did not test it properly on basic systems and therefore
+  when the program started, it would fail to find a function in a DLL.
+
